@@ -21,8 +21,8 @@ return new class extends Migration
             $table->text('content')->nullable();
             $table->string('author', 100);
             $table->string('slug', 100)->unique();
-            $table->string('image', 50)->nullable();
-            $table->decimal('price', 10, 2, true)->default(0);
+            $table->string('image', 100)->nullable();
+            $table->string('price', 100);
             $table->timestamps();
 
             // внешний ключ, ссылается на поле id таблицы categories

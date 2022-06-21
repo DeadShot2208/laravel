@@ -9,7 +9,7 @@
     <container>
 
         <div class="box-img-kontakt">
-            <img src="img/kontakt.jpg" alt="" width="100%" height="700px">
+            <img src="{{asset('img/kontakt.jpg')}}" alt="" width="100%" height="700px">
         </div>
 
         <div class="box-info-kontakt">
@@ -27,10 +27,10 @@
             </div>
 
             <div class="kontakt-4">
-                <a href=""><img src="img/wk.png" alt="" ></a>
-                <a href=""><img src="img/insta.png" alt=""></a>
-                <a href=""><img src="img/face.png" alt=""></a>
-                <a href=""><img src="img/teleg.png" alt=""></a>
+                <a href=""><img src="{{asset('img/wk.png')}}" alt="" ></a>
+                <a href=""><img src="{{asset('img/insta.png')}}" alt=""></a>
+                <a href=""><img src="{{asset('img/face.png')}}" alt=""></a>
+                <a href=""><img src="{{asset('img/teleg.png')}}" alt=""></a>
             </div>
         </div>
 

@@ -260,6 +260,48 @@ body{
     color: white;
 }
 
+.form-label{
+    color: white;
+}
+
+.table{
+    border: 1px #ffffff solid;
+}
+
+.title__table{
+    padding: 5px 10px;
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+tbody tr{
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+tbody td:nth-child(even){
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+}
+
+.fa-minus-square{
+    color: white;
+}
+
+.basket{
+    color: white;
+}
+
+th,td{
+    color: #ffffff;
+}
+
+.checkout{
+    color: white;
+}
+
+.edit{
+    color: black;
+}
 
 
 

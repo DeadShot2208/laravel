@@ -255,6 +255,42 @@
     display: none;
 }
 
+.form-label{
+    color: black;
+}
+
+.title__table{
+    color: #000000;
+    border-bottom: 2px solid #000000;
+
+}
+
+tbody tr{
+    border-top: 1px solid #000000;
+    border-left: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    border-right: 1px solid #000000 ;
+}
+tbody td:nth-child(even){
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+}
+
+.fa-minus-square{
+    color: black;
+}
+
+.basket{
+    color: black;
+}
+
+th,td{
+    color: #000000;
+}
+
+.edit{
+    color: black;
+}
 
 
 

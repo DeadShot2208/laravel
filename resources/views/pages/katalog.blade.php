@@ -13,14 +13,14 @@
             <div class="swiper-col">
                 <section class="swiper-container">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide" style="background-image:url(img/product_hit.jpg)">
+                        <div class="swiper-slide" style="background-image:url({{asset('img/product_hit.jpg')}})">
                             <div class="swiper-content">
                                 <p class="swiper-title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">Заголовок</p>
                                 <span class="swiper-caption" data-swiper-parallax="-20%">Описание слайда</span>
                             </div>
                         </div>
 
-                        <div class="swiper-slide" style="background-image:url(img/product_hit2.jpg)">
+                        <div class="swiper-slide" style="background-image:url({{asset('img/product_hit2.jpg')}})">
                             <div class="swiper-content">
                                 <p class="swiper-title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">Заголовок</p>
                                 <span class="swiper-caption" data-swiper-parallax="-20%">Описание слайда</span>
@@ -36,16 +36,11 @@
             <div class="zagolovok-2">
                 <h1>Сортировать по жанрам</h1>
             </div>
+
             <div class="sortirovka">
-                <a href="">Сверхъестественное</a>
-                <a href="">Боевик</a>
-                <a href="">Комедия</a>
-                <a href="">Комиксы, манга</a>
-                <a href="">Милодрамма</a>
-                <a href="">Детективы</a>
-                <a href="">Классика</a>
-                <a href="">Приключение</a>
-                <a href="">Научные</a>
+                @foreach($categories as $category)
+                <a href="{{route('getByCategory',$category->slug)}}">{{$category->title}}</a>
+                @endforeach
             </div>
 
 
@@ -54,117 +49,28 @@
             </div>
 
             <div class="product-1">
-                <div class="box_product">
-                    <img src="img/product_1.png" alt="">
-                    <div class="info_product">
-                        <h3>Зверский детектив</h3>
-                        <div class="opisanie">
-                            <p>Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат... </p>
-                        </div>
-                        <div class="inn">
-                            <h4>Автор:Генадий</h4>
-                            <h4>Жанр: Детектив, романтика</h4>
-                            <h4>Цена:1500руб</h4>
-                        </div>
-                        <div class="known">
-                            <button class="button button5">В корзину</button>
-                            <a href=""><img src="img/izbr.png" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="box_product">
-                    <img src="img/product_2.png" alt="">
-                    <div class="info_product">
-                        <h3>Зверский детектив</h3>
-                        <div class="opisanie">
-                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                        </div>
-                        <div class="inn">
-                            <h4>Автор:Генадий</h4>
-                            <h4>Жанр: Детектив, романтика</h4>
-                            <h4>Цена:1500руб</h4>
-                        </div>
-                        <div class="known">
-                            <button class="button button5">В корзину</button>
-                            <a href=""><img src="img/izbr.png" alt=""></a>
+                @foreach($products as $product)
+                    <div class="box_product">
+                        <a href="{{route('getPost',[$product->category['slug'], $product->slug])}}">@if($product->image !== '')<img src="{{\Illuminate\Support\Facades\Storage::url($product->image)}}" alt="">@endif</a>
+                        <div class="info_product">
+                            <h3>{{$product['title']}}</h3>
+                            <div class="opisanie">
+                                <p>{{$product['subcontent']}}</p>
+                            </div>
+                            <div class="inn">
+                                <h4>Автор:{{$product['author']}}</h4>
+                                <h4>Жанр:{{ $product->category->title }}</h4>
+                                <h4>Цена:{{$product['price']}}руб</h4>
+                            </div>
+                            <div class="known">
+                                <button class="button button5">В корзину</button>
+                                <a href=""><img src="{{asset('img/izbr.png')}}" alt=""></a>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="box_product">
-                    <img src="img/product_1.png" alt="">
-                    <div class="info_product">
-                        <h3>Зверский детектив</h3>
-                        <div class="opisanie">
-                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                        </div>
-                        <div class="inn">
-                            <h4>Автор:Генадий</h4>
-                            <h4>Жанр: Детектив, романтика</h4>
-                            <h4>Цена:1500руб</h4>
-                        </div>
-                        <div class="known">
-                            <button class="button button5">В корзину</button>
-                            <a href=""><img src="img/izbr.png" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="box_product">
-                    <img src="img/product_2.png" alt="">
-                    <div class="info_product">
-                        <h3>Зверский детектив</h3>
-                        <div class="opisanie">
-                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                        </div>
-                        <div class="inn">
-                            <h4>Автор:Генадий</h4>
-                            <h4>Жанр: Детектив, романтика</h4>
-                            <h4>Цена:2500руб</h4>
-                        </div>
-                        <div class="known">
-                            <button class="button button5">В корзину</button>
-                            <a href=""><img src="img/izbr.png" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="box_product">
-                    <img src="img/product_1.png" alt="">
-                    <div class="info_product">
-                        <h3>Зверский детектив</h3>
-                        <div class="opisanie">
-                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                        </div>
-                        <div class="inn">
-                            <h4>Автор:Генадий</h4>
-                            <h4>Жанр: Детектив, романтика</h4>
-                            <h4>Цена:1600руб</h4>
-                        </div>
-                        <div class="known">
-                            <button class="button button5">В корзину</button>
-                            <a href=""><img src="img/izbr.png" alt=""></a>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
-            <nav aria-label="Пример навигации по страницам">
-                <ul class="pagination">
-                    <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Предыдущая">
-                            <span aria-hidden="true">&laquo;</span>
-                        </a>
-                    </li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Следующая">
-                            <span aria-hidden="true">&raquo;</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+            {{$products->links('vendor.pagination.bootstrap-5')}}
         </container>
 
     </main>

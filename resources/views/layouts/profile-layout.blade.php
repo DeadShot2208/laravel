@@ -51,42 +51,55 @@
                 <li><a class="menu__item" href="{{ route('info') }}">О нас</a></li>
             </ul>
             <div class="theme">
-                <button class="change-theme" data-theme="dark" ><img src="{{asset('img/luna.png')}}" alt=""> </button>
-                <button class="change-theme" data-theme="light" ><img src="{{asset('img/luk.png')}}" alt="" width="40px" height="40px"> </button>
+                <button class="change-theme" data-theme="dark" ><img src="img/luna.png" alt=""> </button>
+                <button class="change-theme" data-theme="light" ><img src="img/luk.png" alt="" width="40px" height="40px"> </button>
             </div>
         </div>
         <div class="poisk">
             <form>
                 <input class="poiskov" type="text" placeholder="Введите название книги...">
-                <button class="button_1" type="submit"><img src="{{asset('img/poisk.png')}}" alt=""></button>
+                <button class="button_1" type="submit"><img src="img/poisk.png" alt=""></button>
             </form>
         </div>
         <div class="main_menu">
             <div class="menu_list">
-                <a href="{{route('basket')}}"><img src="{{asset('img/kz.png')}}" alt=""></a>
+                <a href="{{route('basket')}}"><img src="img/kz.png" alt=""></a>
                 <a href="{{route('basket')}}">Корзина</a>
             </div>
             <div class="menu_list">
-                <a href=""><img src="{{asset('img/iz.png')}}" alt=""></a>
+                <a href="{{route('favorites')}}"><img src="img/iz.png" alt=""></a>
                 <a href="{{route('favorites')}}">Избраное</a>
             </div>
             <div class="menu_list">
                 @guest()
-                <a href="{{ route('login') }}"><img src="{{asset('img/auth.png')}}" alt=""></a>
-                <a href="{{ route('login') }}">Вход</a>
+                    <a href="{{ route('login') }}"><img src="img/auth.png" alt=""></a>
+                    <a href="{{ route('login') }}">Вход</a>
                 @endguest
                 @auth()
-                <a href="{{ route('profile') }}"><img src="{{asset('img/auth.png')}}" alt=""></a>
-                <a href="{{ route('profile') }}">Личный кабинет</a>
-                    @endauth
+                    <a href="{{ route('profile') }}"><img src="img/auth.png" alt=""></a>
+                    <a href="{{ route('profile') }}">Личный кабинет</a>
+                @endauth
             </div>
         </div>
     </container>
 </header>
+<main class="profile_main">
+    <container>
+        <h1>Личный кабинет</h1>
 
+        <div class="menu-profile">
+            <a href="{{route('profile')}}"><img src="" alt="">Профиль</a>
+            <a href="{{route('basket')}}"><img src="" alt="">Корзина</a>
+            <a href="{{route('favorites')}}"><img src="" alt="">Избранное</a>
+            <a href="{{route('order')}}"><img src="" alt="">Заказы</a>
+            <a href="{{route('logout')}}"><img src="" alt="">Выйти</a>
+        </div>
 
 @yield('content')
 
+
+    </container>
+</main>
 <footer class="footer-con">
 
     <div class="container">
@@ -124,11 +137,11 @@
     </div>
 </footer>
 
-<script src="{{asset('https://unpkg.com/swiper@8/swiper-bundle.min.js')}}"></script>
-<script src='{{asset('https://code.jquery.com/jquery-2.2.4.min.js')}}'></script>
-<script src="{{asset('js/main.js')}}"></script>
-<script src="{{asset('js/preloder.js')}}"></script>
-<script src="{{asset('js/dark.js')}}"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src="js/main.js"></script>
+<script src="js/preloder.js"></script>
+<script src="js/dark.js"></script>
 
 </body>
 
