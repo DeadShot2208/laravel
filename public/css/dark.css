@@ -1,0 +1,308 @@
+
+body{
+    background-color: #111B26;
+}
+/* header */
+
+.nav_bar{
+
+    background-color: #111B26;
+    border-bottom: white 1px solid;
+}
+
+.nav_bar container{
+    color: #ffffff;
+}
+
+.poiskov {
+
+    background-color: #ffffff;
+}
+
+.menu_list a{
+    color: #ffffff;
+}
+
+
+/* Main content */
+
+/*  slider */
+
+/*  kategory */
+
+.zagolovok{
+    width: 1440px;
+    height: 30px;
+    padding-top: 70px;
+}
+
+.zagolovok h1{
+    color: white;
+}
+
+
+.box_kategory{
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+
+}
+
+.box_kategory h3{
+    padding-top: 10px;
+    font-size: 18px;
+    color: white;
+}
+
+/*hit product*/
+
+.box_product{
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+}
+
+.box_product h3{
+    font-size: 18px;
+    text-align: center;
+    color: white;
+}
+
+.box_product h4{
+    font-size: 14px;
+    color: white;
+}
+
+.box_product p{
+    font-size: 14px;
+    color: white;
+}
+
+
+.button5 {
+    background-color: #111B26;
+    color: white;
+    border: 1px solid #ffffff;
+}
+
+.button5:hover {
+    background-color: #4B4B4B;
+    color: white;
+}
+
+
+/*FOOTER*/
+
+.footer-con {
+    background-color: #111B26;
+    border-top: white 1px solid;
+}
+
+
+
+.text-glav {
+    color: #ffffff;
+}
+
+.text-glav h1{
+    font-size: 24px;
+    color: white;
+}
+
+.text-glav p{
+    color: white;
+}
+
+.footer-sety .nav {
+    color: #ffffff;
+}
+
+.footer-sety h3{
+    color: white;
+}
+
+.nav a{
+    color: #ffffff;
+}
+
+.menu-footer {
+    color: #ffffff;
+}
+
+.menu-footer h3{
+    font-size: 24px;
+    color: white;
+}
+
+.menu-footer .nav {
+    color: #ffffff;
+}
+
+.footer-sety {
+    color: #ffffff;
+}
+
+.footer-contact {
+    color: #ffffff;
+}
+
+.footer-contact h3{
+    color: white;
+}
+
+.footer-contact h1{
+    color: white;
+}
+
+.footer-contact p{
+    color: white;
+}
+
+/* KATALOG*/
+.zagolovok-1 h1{
+    color: white;
+}
+
+
+
+.zagolovok-2{
+    border-bottom: 0.5px #ffffff solid;
+}
+
+.zagolovok-2 h1{
+    color: white;
+}
+
+
+
+.sortirovka a{
+    color: white;
+    border-bottom: 0.5px #ffffff solid;
+}
+
+.page-link{
+    background-color: #111B26;
+    color: white;
+}
+
+/*     KONTAKT    */
+
+
+
+
+
+.box-img-kontakt{
+    background-color: #111B26;
+}
+
+
+
+.box-info-kontakt h1{
+    color: #006DF0;
+}
+
+.box-info-kontakt h3{
+    color: white;
+}
+
+
+
+/*      PROFILE     */
+
+.profile_main h1{
+    color: white;
+}
+
+.menu-profile{
+    background-color: #343434;
+}
+
+.menu-profile a{
+    color: white;
+}
+
+.profile{
+    border: 1px #ffffff solid;
+
+}
+
+.profile h1{
+    color: white;
+}
+
+.profile h3{
+    color: white;
+}
+
+.profile p{
+    color: white;
+}
+
+.change-theme{
+    border: none;
+}
+
+.change-theme[data-theme="dark"]{
+    display: none;
+}
+
+.change-theme[data-theme="light"]{
+    display: block;
+}
+
+.info-main-text{
+    border: white 2px solid;
+}
+
+.zagolovok-info{
+
+    color: black;
+    background-color: white;
+}
+
+.text-info-history{
+    color: white;
+}
+
+.form-label{
+    color: white;
+}
+
+.table{
+    border: 1px #ffffff solid;
+}
+
+.title__table{
+    padding: 5px 10px;
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+tbody tr{
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+tbody td:nth-child(even){
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+}
+
+.fa-minus-square{
+    color: white;
+}
+
+.basket{
+    color: white;
+}
+
+th,td{
+    color: #ffffff;
+}
+
+.checkout{
+    color: white;
+}
+
+.edit{
+    color: black;
+}
+
+
+
+

@@ -1,0 +1,296 @@
+
+
+/* header */
+
+.nav_bar{
+
+    background-color: #3F4753;
+}
+
+.nav_bar container{
+    color: #ffffff;
+}
+
+.poiskov {
+
+    background-color: #ffffff;
+}
+
+.menu_list a{
+    color: #ffffff;
+}
+
+
+/* Main content */
+
+/*  slider */
+
+/*  kategory */
+
+.zagolovok{
+    width: 1440px;
+    height: 30px;
+    padding-top: 70px;
+}
+
+.zagolovok h1{
+    color: black;
+}
+
+
+.box_kategory{
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+
+}
+
+.box_kategory h3{
+    padding-top: 10px;
+    font-size: 18px;
+    color: black;
+}
+
+/*hit product*/
+
+.box_product{
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+}
+
+.box_product h3{
+    font-size: 18px;
+    text-align: center;
+    color: black;
+}
+
+.box_product h4{
+    font-size: 14px;
+    color: black;
+}
+
+.box_product p{
+    font-size: 14px;
+    color: black;
+}
+
+
+.button5 {
+    background-color: white;
+    color: black;
+    border: 1px solid #000000;
+}
+
+.button5:hover {
+    background-color: #4B4B4B;
+    color: white;
+}
+
+
+/*FOOTER*/
+
+.footer-con {
+    background-color: #3F4753;
+}
+
+
+
+.text-glav {
+    color: #ffffff;
+}
+
+.text-glav h1{
+    font-size: 24px;
+    color: white;
+}
+
+.text-glav p{
+    color: white;
+}
+
+.footer-sety .nav {
+    color: #ffffff;
+}
+
+.footer-sety h3{
+    font-size: 24px;
+    color: white;
+}
+
+.nav a{
+    color: #ffffff;
+}
+
+.menu-footer {
+    color: #ffffff;
+}
+
+.menu-footer h3{
+    font-size: 24px;
+    color: white;
+}
+
+.menu-footer .nav {
+    color: #ffffff;
+}
+
+.footer-sety {
+    color: #ffffff;
+}
+
+.footer-contact {
+    color: #ffffff;
+}
+
+.footer-contact h3{
+    color: white;
+}
+
+.footer-contact h1{
+    color: white;
+}
+
+.footer-contact p{
+    color: white;
+}
+
+/* KATALOG*/
+.zagolovok-1 h1{
+    color: black;
+}
+
+
+
+.zagolovok-2{
+    border-bottom: 0.5px #000 solid;
+}
+
+.zagolovok-2 h1{
+    color: black;
+}
+
+
+
+.sortirovka a{
+    color: black;
+    border-bottom: 0.5px #000000 solid;
+}
+
+.page-link{
+    color: black;
+}
+
+/*     KONTAKT    */
+
+
+
+
+
+.box-img-kontakt{
+    background-color: #3F4753;
+}
+
+
+
+.box-info-kontakt h1{
+    color: #006DF0;
+}
+
+.box-info-kontakt h3{
+    color: black;
+}
+
+
+/*  ADMIN PANEL  */
+
+
+.admin{
+    background-color: #111B26;
+}
+
+.admin-header container{
+    border-bottom: #ffffff 1px solid;
+}
+
+
+
+.list-menu a{
+    color: #ffffff;
+}
+
+.admin-header h3{
+    color: #ffffff;
+}
+
+.wrapp__admin__panel .title{
+    color: #ffffff;
+
+}
+
+/*      PROFILE     */
+
+.menu-profile{
+    background-color: #E2E2E2;
+}
+
+.menu-profile a{
+    color: black;
+}
+
+.profile{
+    border: 1px #000000 solid;
+
+}
+
+.profile h1{
+    color: black;
+}
+
+.change-theme{
+    border: none;
+}
+
+.change-theme[data-theme="dark"]{
+    display: block;
+}
+
+.change-theme[data-theme="light"]{
+    display: none;
+}
+
+.form-label{
+    color: black;
+}
+
+.title__table{
+    color: #000000;
+    border-bottom: 2px solid #000000;
+
+}
+
+tbody tr{
+    border-top: 1px solid #000000;
+    border-left: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    border-right: 1px solid #000000 ;
+}
+tbody td:nth-child(even){
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+}
+
+.fa-minus-square{
+    color: black;
+}
+
+.basket{
+    color: black;
+}
+
+th,td{
+    color: #000000;
+}
+
+.edit{
+    color: black;
+}
+
+
+
